@@ -1,0 +1,42 @@
+.card-categories {
+  display: flex;
+  min-height: 120px;
+  min-width: 580px;
+  &__link {
+    padding: 14px 40px 14px 30px;
+    width: 100%;
+    background-color: var(--color-fon-2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.4s ease-in-out;
+    &:focus,&:focus-visible {
+      outline: none;
+    }
+    &:focus-visible,&:hover,&:active {
+      background-color: var(--color-fon-3);
+      .card-categories__box-img {
+        background-color: var(--color-fon-2);
+      }
+    }
+  }
+  &__name {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 120%;
+    color: var(--color-black);
+  }
+  &__box-img {
+    width: 90px;
+    min-width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: background-color 0.4s ease-in-out;
+    background-color: var(--color-fon-3);
+  }
+}

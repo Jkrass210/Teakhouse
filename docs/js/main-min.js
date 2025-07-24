@@ -1,0 +1,1 @@
+import{mainSwiper}from"./module/mainSwiper.js";document.querySelectorAll(".main-swiper")&&mainSwiper();

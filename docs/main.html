@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная</title>
+  <link href="css/normalize.min.css" rel="stylesheet">
+  <link href="css/swiper-bundle.min.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
+
+  <script>
+    window.addEventListener('load', function () {
+      document.body.classList.remove('loading');
+      document.getElementById('preloader').style.display = 'none';
+    });
+  </script>
+  
+  <script src="js/cleave-min.js" defer></script>
+  <script src="js/swiper-bundle.min.js" defer></script>
+  <script src="js/fslightbox-min.js" defer></script>
+  <script type="module" src="js/main-min.js"></script>
+</head>
+
+<body>
+  <div id="preloader">
+  <div class="loader"></div>
+</div>
+  <header class="header" id="header">
+  <div class="header__container container">
+    <div class="header__line-top">
+      <div class="left">
+        <div class="box-local">
+          <a href="#" class="box-local__link">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <use xlink:href="img/sprite.svg#local"></use>
+            </svg>
+            <span class="box-local__text">Москва</span>
+          </a>
+        </div>
+        <a href="tel:+74951263629" class="link phone">
+          +7 (495) 126-36-29
+        </a>
+      </div>
+      <div class="box-logo">
+        <a href="#">
+          <svg width="70" height="54" viewBox="0 0 70 54" fill="none">
+            <use xlink:href="img/sprite.svg#logo"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="right">
+        <ul class="box-btn-group list-reset">
+  <li>
+    <a href="#">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <use xlink:href="img/sprite.svg#entr"></use>
+      </svg>
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <use xlink:href="img/sprite.svg#like"></use>
+      </svg>
+      <span>10</span>
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <use xlink:href="img/sprite.svg#basket"></use>
+      </svg>
+      <span>0</span>
+    </a>
+  </li>
+</ul>
+      </div>
+    </div>
+    <div class="header__line-bottom">
+      <nav class="box-nav">
+  <ul class="box-nav__list list-reset">
+    <li>
+      <div class="catalog-link">
+  <a href="#" class="catalog-link__link">
+    <span class="catalog-link__burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+    <span class="catalog-link__text">
+      Каталог
+    </span>
+  </a>
+</div>
+    </li>
+    <li>
+      <a href="#" class="box-nav__link">
+        Новинки
+      </a>
+    </li>
+    <li>
+      <a href="#" class="box-nav__link">
+        Sale
+      </a>
+    </li>
+    <li>
+      <a href="#" class="box-nav__link">
+        Дизайнерам
+      </a>
+    </li>
+    <li>
+      <a href="#" class="box-nav__link">
+        Покупателям
+      </a>
+    </li>
+  </ul>
+</nav>
+      <div class="header__box-btn-search">
+        <button class="search__btn btn-reset" id="searchBtn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <use xlink:href="img/sprite.svg#searchBtn"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+  <main class="main">
+    <section class="box-hero">
+  <h1 class="hidden">Мебель</h1>
+  <div class="box-hero__container">
+    <div class="main-swiper swiper">
+      <ul class="main-swiper-wrapper list-reset swiper-wrapper">
+        <li class="main-swiper-slide swiper-slide">
+          <div class="card-main">
+            <img class="card-main__img" src="img/box-hero/1.jpg" alt="img">
+            <div class="card-main__container container">
+              <div class="card-main__info-wrapper">
+                <div class="card-main__marker">
+                  <p>мебель на улице</p>
+                </div>
+                <h2 class="card-main__title">
+                  новая коллекция otazen
+                </h2>
+                <div class="card-main__box-info">
+                  <p class="card-main__desc">
+                    Стильная уличная мебель для загородного дома, кафе, ресторана, отеля. Добавьте в outdoor -
+                    пространство больше комфорта.
+                  </p>
+                  <a href="#" class="card-main__link">
+                    Подробнее
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="main-swiper-slide swiper-slide">
+          <div class="card-main">
+            <img class="card-main__img" src="img/box-hero/2.jpg" alt="img">
+            <div class="card-main__container container">
+              <div class="card-main__info-wrapper">
+                <div class="card-main__marker">
+                  <p>ewgergerg ergewrg</p>
+                </div>
+                <h2 class="card-main__title">
+                  efefef efefe fefef efef efefef efefe fefef efef
+                </h2>
+                <div class="card-main__box-info">
+                  <p class="card-main__desc">
+                    Стильная уличная мебель для загородного дома, кафе, ресторана, отеля. Добавьте в outdoor -
+                    пространство больше комфорта. Стильная уличная мебель для загородного дома, кафе, ресторана, отеля.
+                    Добавьте в outdoor - пространство больше комфорта. Стильная уличная мебель для загородного дома,
+                    кафе,
+                    ресторана, отеля. Добавьте в outdoor - пространство больше комфорта.
+                  </p>
+                  <a href="#" class="card-main__link">
+                    Подробнее
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="main-swiper-slide swiper-slide">
+          <div class="card-main">
+            <img class="card-main__img" src="img/box-hero/3.jpg" alt="img">
+            <div class="card-main__container container">
+              <div class="card-main__info-wrapper">
+                <div class="card-main__marker">
+                  <p>мебель на улице</p>
+                </div>
+                <h2 class="card-main__title">
+                  новая коллекция otazen
+                </h2>
+                <div class="card-main__box-info">
+                  <p class="card-main__desc">
+                    Стильная уличная мебель для загородного дома, кафе, ресторана, отеля. Добавьте в outdoor
+                    -пространство
+                    больше комфорта. загородного дома, кафе, ресторана, загородного дома, кафе, ресторана
+                  </p>
+                  <a href="#" class="card-main__link">
+                    Подробнее
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="main-swiper-slide swiper-slide">
+          <div class="card-main">
+            <img class="card-main__img" src="img/box-hero/4.jpg" alt="img">
+            <div class="card-main__container container">
+              <div class="card-main__info-wrapper">
+                <div class="card-main__marker">
+                  <p>Lorem ipsum dolor</p>
+                </div>
+                <h2 class="card-main__title">
+                  Lorem ipsum dolor sit amet consectetur animi similique, magni!
+                </h2>
+                <div class="card-main__box-info">
+                  <p class="card-main__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos cum laudantium provident pariatur,
+                    molestias cupiditate doloribus dolorem sapiente unde, quaerat ullam eveniet. Non, laudantium illum
+                    porro sed itaque sapiente sequi.
+                  </p>
+                  <a href="#" class="card-main__link">
+                    Подробнее
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </li>
+
+        <li class="main-swiper-slide swiper-slide">
+          <div class="card-main">
+            <img class="card-main__img" src="img/box-hero/5.jpg" alt="img">
+            <div class="card-main__container container">
+              <div class="card-main__info-wrapper">
+                <div class="card-main__marker">
+                  <p>мебель на улице</p>
+                </div>
+                <h2 class="card-main__title">
+                  новая коллекция otazen
+                </h2>
+                <div class="card-main__box-info">
+                  <p class="card-main__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nisi sequi, praesentium suscipit quis
+                    asperiores quod unde dolore consequuntur dolores ad delectus, omnis reiciendis! Aliquid, veritatis.
+                    Praesentium sapiente architecto nihil!
+                  </p>
+                  <a href="#" class="card-main__link">
+                    Подробнее
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </li>
+
+        <li class="main-swiper-slide swiper-slide">
+          <div class="card-main">
+            <img class="card-main__img" src="img/box-hero/6.jpg" alt="img">
+            <div class="card-main__container container">
+              <div class="card-main__info-wrapper">
+                <div class="card-main__marker">
+                  <p>мебель на улице улице</p>
+                </div>
+                <h2 class="card-main__title">
+                  новая коллекция otazen новая коллекция otazen
+                </h2>
+                <div class="card-main__box-info">
+                  <p class="card-main__desc">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem eum, maiores et expedita ea
+                    impedit
+                    pariatur ex reprehenderit quo, animi laboriosam saepe quae consequatur assumenda fugiat. Deserunt
+                    soluta commodi odio!
+                  </p>
+                  <a href="#" class="card-main__link">
+                    Подробнее
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="main-swiper__box-nav container">
+        <div class="main-swiper-pagination"></div>
+
+        <div class="main-swiper__box-btn-group">
+          <button class="btn-reset main-swiper__btn __next">
+            <svg width="58" height="15" viewBox="0 0 58 15" fill="none">
+              <use xlink:href="img/sprite.svg#mainSwiperBtn1"></use>
+            </svg>
+          </button>
+          <button class="btn-reset main-swiper__btn  __prev">
+            <svg width="58" height="15" viewBox="0 0 58 15" fill="none">
+              <use xlink:href="img/sprite.svg#mainSwiperBtn2"></use>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="box-categories">
+  <div class="box-categories__container container">
+    <div class="box-categories__content">
+      <div class="box-categories__info-top">
+        <p class="box-categories__desc">
+          <span>Teakhouse</span> - мы выбираем этичное производство и европейские стандарты качества, в которых
+          воплощаем прогрессивный дизайн.
+        </p>
+      </div>
+      <div class="box-categories__info-bottom">
+        <h2 class="section-title">
+          категории товаров
+        </h2>
+        <ul class="box-categories__list list-reset">
+          <li>
+            <div class="card-categories">
+  <a href="#" class="card-categories__link">
+    <span class="card-categories__name">
+      Декор
+    </span>
+    <span class="card-categories__box-img">
+      <img src="" alt="img">
+    </span>
+  </a>
+</div>
+          </li>
+          <li>
+            <div class="card-categories">
+  <a href="#" class="card-categories__link">
+    <span class="card-categories__name">
+      Декор
+    </span>
+    <span class="card-categories__box-img">
+      <img src="" alt="img">
+    </span>
+  </a>
+</div>
+          </li>
+          <li>
+            <div class="card-categories">
+  <a href="#" class="card-categories__link">
+    <span class="card-categories__name">
+      Картины
+    </span>
+    <span class="card-categories__box-img">
+      <img src="" alt="img">
+    </span>
+  </a>
+</div>
+          </li>
+          <li>
+            <div class="card-categories">
+  <a href="#" class="card-categories__link">
+    <span class="card-categories__name">
+      Картины
+    </span>
+    <span class="card-categories__box-img">
+      <img src="" alt="img">
+    </span>
+  </a>
+</div>
+          </li>
+          <li>
+            <div class="card-categories">
+  <a href="#" class="card-categories__link">
+    <span class="card-categories__name">
+      Horeca
+    </span>
+    <span class="card-categories__box-img">
+      <img src="" alt="img">
+    </span>
+  </a>
+</div>
+          </li>
+          <li>
+            <div class="card-categories">
+  <a href="#" class="card-categories__link">
+    <span class="card-categories__name">
+      Horeca
+    </span>
+    <span class="card-categories__box-img">
+      <img src="" alt="img">
+    </span>
+  </a>
+</div>
+          </li>
+          <li>
+            <div class="card-categories">
+  <a href="#" class="card-categories__link">
+    <span class="card-categories__name">
+      Horeca
+    </span>
+    <span class="card-categories__box-img">
+      <img src="" alt="img">
+    </span>
+  </a>
+</div>
+          </li>
+          <li>
+            <div class="card-categories">
+  <a href="#" class="card-categories__link">
+    <span class="card-categories__name">
+      Horeca
+    </span>
+    <span class="card-categories__box-img">
+      <img src="" alt="img">
+    </span>
+  </a>
+</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+    <section class="box-advantages">
+  <div class="box-advantages__container container">
+    <div class="box-advantages__content">
+      <h2 class="section-title">
+        преимущества
+      </h2>
+      <ul class="box-advantages__list list-reset">
+        <li>
+          <div class="card-advantages">
+  <p class="card-advantages__desc">
+    500+ моделей мебели из ценных пород дерева
+  </p>
+  <span class="card-advantages__img-box">
+    <img src="" alt="img">
+  </span>
+</div>
+        </li>
+        <li>
+          <div class="card-advantages">
+  <p class="card-advantages__desc">
+    Примерка мебели в вашем интерьере
+  </p>
+  <span class="card-advantages__img-box">
+    <img src="" alt="img">
+  </span>
+</div>
+        </li>
+        <li>
+          <div class="card-advantages">
+  <p class="card-advantages__desc">
+    Более 20 лет создаём пространства, полные уюта
+  </p>
+  <span class="card-advantages__img-box">
+    <img src="" alt="img">
+  </span>
+</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+    <section class="box-img">
+  <div class="box-img__container">
+    <div class="box-img__content">
+      <img src="img/box-img/1.jpg" alt="img">
+    </div>
+  </div>
+</section>
+  </main>
+  <footer class="footer" id="footer">
+  <div class="footer__container container">
+    <div class="footer__box-top">
+      <div class="left">
+        <div class="box-logo">
+          <a href="#">
+            <svg width="70" height="54" viewBox="0 0 70 54" fill="none">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="middle box-info">
+        <h3 class="footer__title">
+          Информация
+        </h3>
+        <nav class="footer__nav">
+          <ul class="footer__list list-reset">
+            <li>
+              <a href="#" class="footer__link">
+                FAQ
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">
+                Виртуальная примерка мебели
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">
+                Наши галереи
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">
+                Статьи
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">
+                Фотографам и видеооператорам
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="right box-info">
+        <h3 class="footer__title">
+          Контакты
+        </h3>
+        <div class="footer__group-links">
+          <a href="mailto:info@teakhouse.ru" class="footer__link">info@teakhouse.ru</a>
+          <ul class="footer__list list-reset">
+            <li>
+              <a href="tel:+74951263629" class="footer__link">
+                +7 (495) 126-36-29 
+              </a>
+              <span>
+                ( Москва )
+              </span>
+            </li>
+            <li>
+              <a href="tel:+78124246139" class="footer__link">
+                +7 (812) 424-61-39 
+              </a>
+              <span>
+                ( Санкт-Петербург )
+              </span>
+            </li>
+            <li>
+              <a href="tel:+79122064545" class="footer__link">
+                +7 (912) 206-45-45
+              </a>
+              <span>
+                ( Архангельск )
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__line-middle">
+      <div class="box-network">
+  <ul class="box-network__list list-reset">
+    <li>
+      <a href="#">
+
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        
+      </a>
+    </li>
+  </ul>
+</div>
+    </div>
+    <div class="footer__line-bottom">
+      <p class="footer__desc">
+        © Teak House, 20XX. Все права защищены.
+      </p>
+      <ul class="footer__list-bottom list-reset">
+        <li>
+          <a href="#">
+            Политика в отношении обработки персональных данных
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Договор оферты
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Согласие на обработку персональных данных
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

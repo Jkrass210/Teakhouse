@@ -1,0 +1,53 @@
+.main-swiper {
+  &-slide {
+    box-sizing: border-box;
+  }
+  &__box-nav {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    bottom: 60px;
+    z-index: 2;
+    transform: translate(-50%, 0);
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: end;
+  }
+  &-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 120%;
+    color: var(--color-black-1);
+  }
+  &__box-btn-group {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+  }
+  &__btn {
+    pointer-events: auto;
+    display: flex;
+    align-items: center;
+    color: var(--color-black);
+    transition: color 0.4s ease-in-out;
+    &:focus,&:focus-visible {
+      outline: none;
+    }
+    &:focus-visible,&:hover,&:active {
+      color: var(--color-2);
+    }
+    &.__next {
+      padding-top: 1px;
+    }
+    &.swiper-button-disabled {
+      pointer-events: none;
+      opacity: 0.5;
+    }
+  }
+}

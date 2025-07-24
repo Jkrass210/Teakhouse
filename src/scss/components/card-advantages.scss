@@ -1,0 +1,29 @@
+.card-advantages {
+  min-height: 120px;
+  height: 100%;
+  padding: 14px 40px 14px 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: space-between;
+  background-color: var(--color-fon-2);
+  &__desc {
+    max-width: 250px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: var(--color-black-1);
+  }
+  &__img-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 90px;
+    min-width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    background-color: var(--color-fon-3);
+  }
+}

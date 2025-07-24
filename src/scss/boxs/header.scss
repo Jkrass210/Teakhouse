@@ -1,0 +1,52 @@
+.header {
+  background-color: var(--color-white);
+  &__line-top {
+    position: relative;
+    padding: 29px 0 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .left {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: clamp(5px, 2vw, 28px);
+    }
+    .box-logo {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 1px solid var(--color-black);
+      border-top: 0px;
+      a {
+        padding: 26px 13px 14px;
+        display: flex;
+        background-color: transparent;
+        color: var(--color-black-1);
+        transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+        &:focus,&:focus-visible {
+          outline: none;
+        }
+        &:focus-visible,&:hover,&:active {
+          color: var(--color-white);
+          background-color: var(--color-3);
+        }
+      }
+    }
+  }
+  &__line-bottom {
+    position: relative;
+    padding: 35px 24px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__box-btn-search {
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

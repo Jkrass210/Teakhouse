@@ -1,0 +1,112 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/** {
+  outline: 2px solid red;
+}*/
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, p {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-width: 320px;
+  font-family: var(--font-family);
+  background-color: var(--color-white);
+}
+
+.main {
+  flex: 1;
+}
+
+.overlay {
+  position: fixed;
+  z-index: 3;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  background-color: #333c;
+  transition: visibility 0.4s ease-in-out, bottom 0.4s ease-in-out, opacity 0.4s ease-in-out, z-index 0.4s ease-in-out;
+}
+
+.overlay--active {
+  visibility: visible;
+  bottom: 0px;
+}
+
+.stop-scroll {
+  overflow: hidden;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.container {
+  max-width: 1812px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.container2 {
+  max-width: 1920px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.hidden {
+	display: none !important;
+}
+
+:root {
+  --font-family: "Gilroy", sans-serif;
+  --second-family: "Inter", sans-serif;
+}
+
+:root {
+	--color-black: #000;
+	--color-white: #fff;
+	--color-black-1: #050505;
+	--color-fon-1: #e7e7e7;
+	--color-fon-2: #f2f2f2;
+	--color-fon-3: #d9d9d9;
+	--color-fon-4: #f9f8f8;
+  --color-fon-5: #cacaca;
+	--color-border-1: #b8b8b8;
+	--color-border-2: #9f9f9f;
+	--color-1: #8d8d8d;
+	--color-2: #5d5d5d;
+	--color-3: #3f5942;
+	--color-4: #282828;
+}

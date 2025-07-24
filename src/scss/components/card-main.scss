@@ -1,0 +1,104 @@
+.card-main {
+  display: flex;
+  position: relative;
+  min-height: 890px;
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background-color: #ffffff40;
+  }
+  &__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    object-fit: cover;
+  }
+  &__container {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: end;
+  }
+  &__info-wrapper {
+    padding: 62px 0;
+    width: 100%;
+  }
+  &__marker {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 11px;
+    &::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background-color: var(--color-black-1);
+      border-radius: 100%;
+    }
+    p {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 120%;
+      text-transform: uppercase;
+      color: var(--color-black-1);
+    }
+  }
+  &__title {
+    margin-bottom: 36px;
+    max-width: 85%;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: var(--color-black-1);
+  }
+  &__box-info {
+    padding-top: 20px;
+    border-top: 1px solid #0505053d;
+  }
+  &__desc {
+    margin-bottom: 28px;
+    max-width: 785px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    color: var(--color-black-1);
+  }
+  &__link {
+    display: inline-block;
+    padding-bottom: 4px;
+    position: relative;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: var(--color-black);
+    transition: color 0.4s ease-in-out;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      transition: background-color 0.4s ease-in-out;
+      background-color: var(--color-black);
+    }
+    &:focus,&:focus-visible {
+      outline: none;
+    }
+    &:focus-visible,&:hover,&:active {
+      color: var(--color-2);
+      &::after {
+        background-color: var(--color-2);
+      }
+    }
+  }
+}

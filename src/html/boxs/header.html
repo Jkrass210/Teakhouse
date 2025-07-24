@@ -1,0 +1,39 @@
+<header class="header" id="header">
+  <div class="header__container container">
+    <div class="header__line-top">
+      <div class="left">
+        <div class="box-local">
+          <a href="#" class="box-local__link">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <use xlink:href="img/sprite.svg#local"></use>
+            </svg>
+            <span class="box-local__text">Москва</span>
+          </a>
+        </div>
+        <a href="tel:+74951263629" class="link phone">
+          +7 (495) 126-36-29
+        </a>
+      </div>
+      <div class="box-logo">
+        <a href="#">
+          <svg width="70" height="54" viewBox="0 0 70 54" fill="none">
+            <use xlink:href="img/sprite.svg#logo"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="right">
+        @@include('./box-btn-group.html')
+      </div>
+    </div>
+    <div class="header__line-bottom">
+      @@include('./box-nav.html')
+      <div class="header__box-btn-search">
+        <button class="search__btn btn-reset" id="searchBtn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <use xlink:href="img/sprite.svg#searchBtn"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,11 @@
+.box-advantages {
+  padding: 80px 0 232px;
+  &__list {
+    display: flex;
+    gap: 20px;
+    li {
+      flex: 1;
+      height: auto;
+    }
+  }
+}
