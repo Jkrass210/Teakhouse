@@ -1,5 +1,6 @@
 .card-categories {
   display: flex;
+  height: 100%;
   min-height: 120px;
   min-width: 580px;
   &__link {
@@ -15,12 +16,12 @@
     &:focus,&:focus-visible {
       outline: none;
     }
-    &:focus-visible,&:hover,&:active {
+    /*&:focus-visible,&:hover,&:active {
       background-color: var(--color-fon-3);
       .card-categories__box-img {
         background-color: var(--color-fon-2);
       }
-    }
+    }*/
   }
   &__name {
     font-family: var(--font-family);

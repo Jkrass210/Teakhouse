@@ -1,6 +1,8 @@
 .box-categories {
   &__list {
+    cursor: grab;
     overflow: auto;
+    user-select: none;
     width: 100%;
     padding-bottom: 60px;
     display: grid;
@@ -8,6 +10,9 @@
     grid-auto-flow: column;
     column-gap: 20px;
     row-gap: 20px;
+    &:active {
+      cursor: grabbing;
+    }
     &::-webkit-scrollbar {
       height: 3px;
     }

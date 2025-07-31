@@ -1,0 +1,48 @@
+.card-product {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  &__link {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .prise {
+      display: flex;
+      gap: 8px;
+      .current {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 120%;
+        color: var(--color-6);
+      }
+    }
+  }
+  &__box-img {
+    margin-bottom: 20px;
+    border: 1px solid #c2c2c2;
+    position: relative;
+    display: block;
+    &::before {
+      content: '';
+      display: block;
+      padding-top: 100%;
+    }
+    img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__title {
+    margin-bottom: 8px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 120%;
+    color: var(--color-black);
+  }
+}

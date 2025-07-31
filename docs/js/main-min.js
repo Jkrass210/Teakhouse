@@ -1,1 +1,1 @@
-import{mainSwiper}from"./module/mainSwiper.js";document.querySelectorAll(".main-swiper")&&mainSwiper();
+import{mainSwiper}from"./module/mainSwiper.js";import{boxCategoriesScroll}from"./module/boxCategoriesScroll.js";document.querySelectorAll(".main-swiper")&&mainSwiper(),document.querySelectorAll(".box-categories__list")&&boxCategoriesScroll();

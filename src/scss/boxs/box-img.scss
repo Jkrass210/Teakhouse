@@ -1,14 +1,58 @@
 .box-img {
   &__container {
     display: flex;
+    flex-direction: column;
   }
   &__content {
     width: 100%;
     display: flex;
+    max-height: 916px;
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+  }
+  &__info {
+    padding-top: 40px;
+  }
+  &__title {
+    margin-bottom: 16px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: var(--color-black);
+  }
+  &__link {
+    display: inline-block;
+    padding-bottom: 4px;
+    position: relative;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: var(--color-black);
+    transition: color 0.4s ease-in-out;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      transition: background-color 0.4s ease-in-out;
+      background-color: var(--color-black);
+    }
+    &:focus,&:focus-visible {
+      outline: none;
+    }
+    &:focus-visible,&:hover,&:active {
+      color: var(--color-2);
+      &::after {
+        background-color: var(--color-2);
+      }
     }
   }
 }
