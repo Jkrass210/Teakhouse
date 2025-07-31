@@ -3,12 +3,14 @@
   min-height: 120px;
   min-width: 580px;
   &__link {
-    padding: 14px 40px 14px 30px;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid var(--color-fon-5);
     width: 100%;
-    background-color: var(--color-fon-2);
+    background-color: var(--color-white);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 30px;
     transition: background-color 0.4s ease-in-out;
     &:focus,&:focus-visible {
       outline: none;
@@ -28,15 +30,14 @@
     color: var(--color-black);
   }
   &__box-img {
-    width: 90px;
-    min-width: 90px;
-    height: 90px;
-    border-radius: 100%;
+    border-radius: 5px 0 0 5px;
+    width: 120px;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     transition: background-color 0.4s ease-in-out;
-    background-color: var(--color-fon-3);
+    background-color: var(--color-5);
   }
 }
