@@ -23,8 +23,8 @@ export function mainSwiper() {
 
     // Навигационные кнопки
     navigation: {
-      nextEl: '.__prev',
-      prevEl: '.__next',
+      nextEl: '.main-swiper__btn.__prev',
+      prevEl: '.main-swiper__btn.__next',
     },
 
     // Дополнительные параметры

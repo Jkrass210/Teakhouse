@@ -1,9 +1,9 @@
 .footer {
-  background-color: var(--color-fon-5);
   &__title {
+    margin-bottom: 30px;
     font-family: var(--font-family);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 110%;
     text-transform: uppercase;
     color: var(--color-black);
@@ -11,71 +11,50 @@
   .box-logo {
     display: flex;
     a {
-      width: 74px;
-      min-width: 74px;
-      height: 65px;
       display: flex;
       align-items: center;
       justify-content: center;
-      border: 1px solid var(--color-4);
       background-color: transparent;
-      color: var(--color-black);
-      transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out;
       &:focus,&:focus-visible {
         outline: none;
       }
-      &:focus-visible,&:hover,&:active {
-        background-color: var(--color-3);
-        color: var(--color-white);
+      &:focus-visible {
+        outline: 1px solid var(--color-black);
       }
-    }
-    svg {
-      width: 54px;
-      height: 40px;
+      svg {
+        width: 112px;
+        height: 39px;
+      }
     }
   }
   &__box-top {
-    padding: 60px 0 40px;
-    min-height: 428px;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid var(--color-border-2);
-    .left {
-      width: calc(725 / 1780 * 100%);
-    }
-    .middle {
-      width: calc(577 / 1780 * 100%);
-    }
-    .right {
-      width: calc(478 / 1780 * 100%);
-    }
-    .box-info {
-      padding: 0 35px;
-      border-left: 1px solid var(--color-border-2);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+    background-color: var(--color-5);
+    padding: 70px 0;
+    &-content {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
     }
   }
   &__list {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 16px;
     span {
       font-family: var(--font-family);
       font-weight: 400;
-      font-size: 15px;
+      font-size: 18px;
       line-height: 110%;
-      color: var(--color-2);
+      color: #2c2c2c;
     }
   }
   &__link {
     font-family: var(--font-family);
     font-weight: 400;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 110%;
     transition: color 0.4s ease-in-out;
-    color: var(--color-2);
+    color: #2c2c2c;
     &:focus,&:focus-visible {
       outline: none;
     }
@@ -83,51 +62,52 @@
       color: var(--color-black);
     }
   }
-  &__group-links {
+  &__link-network {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  &__line-middle {
-    padding: 40px 0 40px;
-    display: flex;
-    width: 100%;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    &:focus,&:focus-visible {
+      outline: none;
+    }
+    &:focus-visible,&:hover,&:active {
+      
+    }
   }
   &__line-bottom {
-    padding: 40px 0 18px;
-    display: flex;
-    gap: 30px;
-    justify-content: space-between;
-    align-items: center;
+    padding: 24px 0 40px;
   }
   &__desc {
+    text-align: center;
     font-family: var(--font-family);
     font-weight: 400;
-    font-size: 12px;
-    white-space: nowrap;
+    font-size: 14px;
     line-height: 110%;
-    color: var(--color-2);
+    color: var(--color-black);
   }
-  &__list-bottom {
+  .middle {
+    .footer__title {
+      margin-bottom: 0;
+    }
+  }
+  .box-info {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  &__box-network {
+    display: flex;
+    gap: 40px;
     flex-wrap: wrap;
-    gap: clamp(5px, 2vw, 20px);
-    a {
-      font-family: var(--font-family);
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 110%;
-      color: var(--color-2);
-      white-space: nowrap;
-      transition: color 0.4s ease-in-out;
-      &:focus,&:focus-visible {
-        outline: none;
-      }
-      &:focus-visible,&:hover,&:active {
-        color: var(--color-black);
-      }
+    align-items: center;
+
+    .footer__title {
+      margin-bottom: 0;
+    }
+
+    &-list {
+      display: flex;
+      gap: 30px;
     }
   }
 }

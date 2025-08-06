@@ -5,7 +5,7 @@
   &::after {
     content: "";
     position: absolute;
-    inset: 0;
+    inset: 50% 0 0 0;
     z-index: 0;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 55.77%, rgba(0, 0, 0, 0.44) 100%);
   }
@@ -26,6 +26,8 @@
   &__info-wrapper {
     padding: 130px 0 58px;
     width: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
   }
   &__marker {
     display: flex;

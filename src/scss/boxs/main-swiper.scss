@@ -1,6 +1,11 @@
 .main-swiper {
   &-slide {
     box-sizing: border-box;
+    &.swiper-slide-active {
+      .card-main__info-wrapper {
+        opacity: 1;
+      }
+    }
   }
   &__box-nav {
     pointer-events: none;

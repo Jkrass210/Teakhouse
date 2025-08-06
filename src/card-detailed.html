@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/components/head.html',{"title":"Главная"})
+<body>
+  @@include('html/boxs/preloader.html')
+  @@include('html/boxs/header.html')
+  <main class="main">
+    @@include('html/components/path.html')
+
+    @@include('html/boxs/box-card-detailed.html')
+
+    @@include('html/boxs/box-info-detailed.html')
+
+    @@include('html/boxs/box-list.html',{"title":"Вы ранее смотрели"})
+
+  </main>
+  @@include('html/boxs/footer.html')
+</body>
+</html>

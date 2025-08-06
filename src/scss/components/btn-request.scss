@@ -1,0 +1,21 @@
+.btn-request {
+  border-radius: 44px;
+  width: 100%;
+  padding: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-family);
+  font-weight: 400;
+  border: 1px solid var(--color-white);
+  font-size: 18px;
+  color: var(--color-black);
+  background-color: #ededed;
+  transition: border-color 0.4s ease-in-out;
+  &:focus,&:focus-visible {
+    outline: none;
+  }
+  &:focus-visible,&:hover,&:active {
+    border-color: #ededed;
+  }
+}

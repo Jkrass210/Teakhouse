@@ -1,5 +1,5 @@
-export function boxCategoriesScroll() {
-  const container = document.querySelector('.box-categories__list');
+export function boxCategoriesScroll(classBox) {
+  const container = document.querySelector(classBox);
 
   let isDragging = false;
   let startX, scrollLeft;

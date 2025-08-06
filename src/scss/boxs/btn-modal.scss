@@ -1,0 +1,18 @@
+.btn-modal {
+  display: flex;
+  &__btn {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: var(--color-black);
+    transition: color 0.4s ease-in-out;
+    &:focus,&:focus-visible {
+      outline: none;
+    }
+    &:focus-visible,&:hover,&:active {
+      color: var(--color-3);
+    }
+  }
+}

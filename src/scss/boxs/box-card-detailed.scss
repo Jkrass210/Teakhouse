@@ -1,0 +1,200 @@
+.box-card-detailed {
+  margin-bottom: 150px;
+  &__content {
+    display: flex;
+    gap: calc(50 / 1780 * 100%);
+    justify-content: center;
+    .left {
+      width: calc(665 / 1780 * 100%);
+    }
+    .right {
+      width: calc(635 / 1780 * 100%);
+      display: flex;
+      flex-direction: column;
+      &__line-top {
+        padding-bottom: 16px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        border-bottom: 1px solid var(--color-9);
+      }
+      &__box-size {
+        padding-top: 20px;
+      }
+      &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        li {
+          display: flex;
+          gap: 4px;
+          font-family: var(--font-family);
+          font-weight: 400;
+          font-size: 18px;
+          .name {
+            font-weight: 500;
+            color: #292929;
+          }
+          .size {
+            color: var(--color-black);
+          }
+          .desc {
+            color: var(--color-black);
+          }
+          .add-wrapp {
+            display: flex;
+            gap: 4px;
+          }
+        }
+      }
+      &__box-color {
+        padding-top: 26px;
+      }
+      &__box-desc {
+        padding-top: 26px;
+        .right__list {
+          li:has(.add-wrapp) {
+            gap: 20px;
+            flex-wrap: wrap;
+          }
+        }
+      }
+      &__box-price {
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        .price {
+          display: flex;
+          gap: 4px;
+          .correct {
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 26px;
+            color: var(--color-black);
+          }
+          .old {
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 14px;
+            text-decoration: line-through;
+            color: var(--color-2);
+          }
+        }
+      }
+      &__btn-group {
+        padding-top: 30px; 
+      }
+      &__btn-list {
+        display: grid;
+        column-gap: 16px;
+        row-gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        li:last-child {
+          grid-column: span 2;
+        }
+      }
+      &__box-advantage {
+        padding-top: 53px;
+      }
+    }
+  }
+  &__name-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  &__title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: var(--color-black);
+  }
+  &__desc {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    .point {
+      display: flex;
+      gap: 4px;
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 16px;
+      color: var(--color-black);
+      .medium {
+        font-weight: 500;
+      }
+    }
+  }
+  &__btn-group {
+    display: flex;
+    gap: 14px;
+    align-items: start;
+    a {
+      display: flex;
+      color: var(--color-7);
+      transition: color 0.4s ease-in-out;
+      &:focus,&:focus-visible {
+        outline: none;
+      }
+      &:focus-visible,&:hover,&:active {
+        color: var(--color-black);
+      }
+    }
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid var(--color-black);
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    background-color: transparent;
+    color: var(--color-black);
+    transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out, border-color 0.4s ease-in-out;
+    &:focus,&:focus-visible {
+      outline: none;
+    }
+    &:focus-visible,&:hover,&:active {
+      color: var(--color-white);
+      border-color: var(--color-11);
+      background-color: var(--color-11);
+    }
+    &.basket {
+      color: var(--color-white);
+      border-color: var(--color-11);
+      background-color: var(--color-11);
+      &:focus-visible,&:hover,&:active {
+        color: var(--color-black);
+        border-color: var(--color-black);
+        background-color: transparent;
+      }
+    }
+  }
+  &__advantage-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
+  }
+  &__card-advantage {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    align-items: center;
+    .box-img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      width: 32px;
+      min-width: 32px;
+      height: 32px;
+      border-radius: 100%;
+      background-color: var(--color-fon-3);
+    }
+  }
+}

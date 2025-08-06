@@ -1,0 +1,1442 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная</title>
+  <link href="css/normalize.min.css?_v=20250806163532" rel="stylesheet">
+  <link href="css/swiper-bundle.min.css?_v=20250806163532" rel="stylesheet">
+  <link href="css/style.min.css?_v=20250806163532" rel="stylesheet">
+
+  <script>
+    window.addEventListener('load', function () {
+      document.body.classList.remove('loading');
+      document.getElementById('preloader').style.display = 'none';
+    });
+  </script>
+  
+  <script src="js/cleave-min.js?_v=20250806163532" defer></script>
+  <script src="js/swiper-bundle.min.js?_v=20250806163532" defer></script>
+  <script src="js/fslightbox-min.js?_v=20250806163532" defer></script>
+  <script type="module" src="js/main-min.js?_v=20250806163532"></script>
+</head>
+
+<body>
+  <div id="preloader">
+  <div class="loader"></div>
+</div>
+  <header class="header" id="header">
+  <div class="header__container container">
+    <div class="header__line-top">
+      <div class="left">
+        <div class="box-local">
+          <a href="#" class="box-local__link">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <use xlink:href="img/sprite.svg#local"></use>
+            </svg>
+            <span class="box-local__text">Москва</span>
+          </a>
+        </div>
+        <a href="tel:+74951263629" class="link phone">
+          +7 (495) 126-36-29
+        </a>
+      </div>
+      <div class="box-logo">
+        <a href="#">
+          <svg width="146" height="51" viewBox="0 0 146 51" fill="none">
+            <use xlink:href="img/sprite.svg#logo"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="right">
+        <ul class="box-btn-group list-reset">
+  <li>
+    <a href="#">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <use xlink:href="img/sprite.svg#entr"></use>
+      </svg>
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <use xlink:href="img/sprite.svg#like"></use>
+      </svg>
+      <span>10</span>
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <use xlink:href="img/sprite.svg#basket"></use>
+      </svg>
+      <span>0</span>
+    </a>
+  </li>
+</ul>
+      </div>
+    </div>
+    <div class="header__line-bottom">
+      <div class="header__box-logo-hidden">
+        <a href="#" class="box-logo-hidden__link">
+          <svg width="110" height="18" viewBox="0 0 110 18" fill="none">
+            <use xlink:href="img/sprite.svg#logo1"></use>
+          </svg>
+        </a>
+      </div>
+      <nav class="box-nav">
+  <ul class="box-nav__list list-reset">
+    <li>
+      <div class="catalog-link">
+  <a href="#" class="catalog-link__link">
+    <span class="catalog-link__text">
+      Каталог
+    </span>
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+      <use xlink:href="img/sprite.svg#topArr"></use>
+    </svg>
+  </a>
+  <div class="catalog-link__drop-down-catalog drop-down-catalog">
+    <div class="drop-down-catalog__line-top">
+      <ul class="drop-down-catalog__list list-reset list-level-1">
+        <li class="item-level-1">
+          <a href="#" class="link-level-1">
+            Мебель
+          </a>
+          <ul class="list-level-2 list-reset">
+            <li class="item-level-2">
+              <a href="#" class="link-level-2">
+                Мебель-2
+              </a>
+              <ul class="list-level-3 list-reset">
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-1
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-2
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-1
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-2
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-1
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-2
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-1
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-2
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-1
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-2
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-1
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-2
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-1
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-2
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-1
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-2
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-1
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-2
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-1
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-2
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-1
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-2
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-1
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-2
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-1
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-2
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-1
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-2
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-1
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-2
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-1
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-2
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="item-level-2">
+              <a href="#" class="link-level-2">
+                Мебель-2-1
+              </a>
+              <ul class="list-level-3 list-reset">
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-1111
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-1
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-2
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="item-level-2">
+              <a href="#" class="link-level-2">
+                Мебель-2-1
+              </a>
+              <ul class="list-level-3 list-reset">
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-1111
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-1
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-2
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="item-level-2">
+              <a href="#" class="link-level-2">
+                Мебель-2-1
+              </a>
+              <ul class="list-level-3 list-reset">
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-1111
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-1
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-2
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="item-level-2">
+              <a href="#" class="link-level-2">
+                Мебель-2-1
+              </a>
+              <ul class="list-level-3 list-reset">
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-1111
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-1
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-2
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="item-level-2">
+              <a href="#" class="link-level-2">
+                Мебель-2-1
+              </a>
+              <ul class="list-level-3 list-reset">
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-1111
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-1
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-2
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="item-level-2">
+              <a href="#" class="link-level-2">
+                Мебель-2-1
+              </a>
+              <ul class="list-level-3 list-reset">
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-1111
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-1
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-2
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="item-level-2">
+              <a href="#" class="link-level-2">
+                Мебель vsdf sdfsdf sdfsdf sdfsedf sdfsdf
+              </a>
+              <ul class="list-level-3 list-reset">
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-1111
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-1
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Мебель-3-2
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="item-level-2">
+              <a href="#" class="link-level-2">
+                Мебель vsdf sdfsdf sdfsdf sdfsedf sdfsdf
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="item-level-1">
+          <a href="#" class="link-level-1">
+            Свет
+          </a>
+          <ul class="list-level-2 list-reset">
+            <li class="item-level-2">
+              <a href="#" class="link-level-2">
+                Свет-2
+              </a>
+              <ul class="list-level-3 list-reset">
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Свет-3
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Свет-3-1
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Свет-3-2
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="item-level-2">
+              <a href="#" class="link-level-2">
+                Свет-2-1
+              </a>
+              <ul class="list-level-3 list-reset">
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Свет-3
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Свет-3-1
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Свет-3-2
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="item-level-1">
+          <a href="#" class="link-level-1">
+            Декор
+          </a>
+          <ul class="list-level-2 list-reset">
+            <li class="item-level-2">
+              <a href="#" class="link-level-2">
+                Декор-2
+              </a>
+              <ul class="list-level-3 list-reset">
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Декор-3
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Декор-3-1
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Декор-3-2
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="item-level-2">
+              <a href="#" class="link-level-2">
+                Декор-2-1
+              </a>
+              <ul class="list-level-3 list-reset">
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Декор-3
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Декор-3-1
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Декор-3-2
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="item-level-1">
+          <a href="#" class="link-level-1">
+            Картины
+          </a>
+          <ul class="list-level-2 list-reset">
+            <li class="item-level-2">
+              <a href="#" class="link-level-2">
+                Картины-2
+              </a>
+              <ul class="list-level-3 list-reset">
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Картины-3354535
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Картины-3-135335
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Картины-3-2
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="item-level-2">
+              <a href="#" class="link-level-2">
+                Картины-2-1
+              </a>
+              <ul class="list-level-3 list-reset">
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Картины-3
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Картины-3-1
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Картины-3-2
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="item-level-1">
+          <a href="#" class="link-level-1">
+            Horeca
+          </a>
+          <ul class="list-level-2 list-reset">
+            <li class="item-level-2">
+              <a href="#" class="link-level-2">
+                Horeca-2
+              </a>
+              <ul class="list-level-3 list-reset">
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Horeca-3
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Horeca-3-1
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Horeca-3-2
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="item-level-2">
+              <a href="#" class="link-level-2">
+                Horeca-2-1
+              </a>
+              <ul class="list-level-3 list-reset">
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Horeca-3
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Horeca-3-1
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Horeca-3-2
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="item-level-1">
+          <a href="#" class="link-level-1">
+            Скидки
+          </a>
+          <ul class="list-level-2 list-reset">
+            <li class="item-level-2">
+              <a href="#" class="link-level-2">
+                Скидки-2
+              </a>
+              <ul class="list-level-3 list-reset">
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Скидки-3
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Скидки-3-1
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Скидки-3-2
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="item-level-2">
+              <a href="#" class="link-level-2">
+                Скидки-2-1
+              </a>
+              <ul class="list-level-3 list-reset">
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Скидки-3
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Скидки-3-1
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Скидки-3-2
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="item-level-1">
+          <a href="#" class="link-level-1">
+            Новинки
+          </a>
+          <ul class="list-level-2 list-reset">
+            <li class="item-level-2">
+              <a href="#" class="link-level-2">
+                Новинки-2
+              </a>
+              <ul class="list-level-3 list-reset">
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Новинки-3
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Новинки-3-1
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Новинки-3-2
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="item-level-2">
+              <a href="#" class="link-level-2">
+                Новинки-2-1
+              </a>
+              <ul class="list-level-3 list-reset">
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Новинки-3
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Новинки-3-1
+                  </a>
+                </li>
+                <li class="item-level-3">
+                  <a href="#" class="link-level-3">
+                    Новинки-3-2
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="drop-down-catalog__box-bottom">
+      <div class="box-level-2">
+      </div>
+      <div class="box-level-3">
+      </div>
+    </div>
+  </div>
+</div>
+    </li>
+    <li>
+      <a href="#" class="box-nav__link">
+        Новинки
+      </a>
+    </li>
+    <li>
+      <a href="#" class="box-nav__link">
+        Sale
+      </a>
+    </li>
+    <li>
+      <a href="#" class="box-nav__link">
+        Дизайнерам
+      </a>
+    </li>
+    <li>
+      <a href="#" class="box-nav__link">
+        Покупателям
+      </a>
+    </li>
+  </ul>
+</nav>
+      <div class="header__box-btn-search">
+        <button class="search__btn btn-reset" id="searchBtn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <use xlink:href="img/sprite.svg#searchBtn"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+  <main class="main">
+    <div class="path">
+  <div class="path__container container">
+    <ul class="path__list list-reset">
+      <li>
+        <a href="/">
+          <span class="text">
+            Главная
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="slash">/</span>
+          <span class="text">
+            Диваны
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="slash">/</span>
+          <span class="text">
+            Диван PERUGIA Grey 227
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+    <section class="box-card-detailed">
+  <div class="box-card-detailed__container container">
+    <div class="box-card-detailed__content">
+      <div class="left">
+        <div class="swiper-detailed">
+  <div class="swiper-detailed__top swiper">
+    <ul class="swiper-wrapper list-reset">
+      <li class="swiper-slide">
+        <div class="swiper-detailed__box-img">
+          <a class="swiper-detailed__link" href="img/card-product/1.jpg" data-fslightbox="gallery">
+            <picture><source srcset="img/card-product/1.webp" type="image/webp"><img src="img/card-product/1.jpg" alt="img"></picture>
+          </a>
+        </div>
+      </li>
+      <li class="swiper-slide">
+        <div class="swiper-detailed__box-img">
+          <a class="swiper-detailed__link" href="img/card-product/2.jpg" data-fslightbox="gallery">
+            <picture><source srcset="img/card-product/2.webp" type="image/webp"><img src="img/card-product/2.jpg" alt="img"></picture>
+          </a>
+        </div>
+      </li>
+      <li class="swiper-slide">
+        <div class="swiper-detailed__box-img">
+          <a class="swiper-detailed__link" href="img/card-product/3.jpg" data-fslightbox="gallery">
+            <picture><source srcset="img/card-product/3.webp" type="image/webp"><img src="img/card-product/3.jpg" alt="img"></picture>
+          </a>
+        </div>
+      </li>
+      <li class="swiper-slide">
+        <div class="swiper-detailed__box-img">
+          <a class="swiper-detailed__link" href="img/card-product/4.jpg" data-fslightbox="gallery">
+            <picture><source srcset="img/card-product/4.webp" type="image/webp"><img src="img/card-product/4.jpg" alt="img"></picture>
+          </a>
+        </div>
+      </li>
+      
+    </ul>
+  </div>
+  <div class="swiper-detailed__wrapper">
+    <div class="swiper-detailed__bottom swiper">
+      <ul class="swiper-wrapper list-reset">
+        <li class="swiper-slide">
+          <div class="swiper-detailed__box-img-bottom">
+            <picture><source srcset="img/card-product/1.webp" type="image/webp"><img src="img/card-product/1.jpg" alt="img"></picture>
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="swiper-detailed__box-img-bottom">
+            <picture><source srcset="img/card-product/2.webp" type="image/webp"><img src="img/card-product/2.jpg" alt="img"></picture>
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="swiper-detailed__box-img-bottom">
+            <picture><source srcset="img/card-product/3.webp" type="image/webp"><img src="img/card-product/3.jpg" alt="img"></picture>
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="swiper-detailed__box-img-bottom">
+            <picture><source srcset="img/card-product/4.webp" type="image/webp"><img src="img/card-product/4.jpg" alt="img"></picture>
+          </div>
+        </li>
+        
+      </ul>
+    </div>
+    <div class="swiper-detailed__box-nav">
+      <button class="btn-reset swiper-detailed__btn __next">
+        <svg width="44" height="16" viewBox="0 0 44 16" fill="none">
+          <use xlink:href="img/sprite.svg#detailedSwiperBtn2"></use>
+        </svg>
+      </button>
+      <button class="btn-reset swiper-detailed__btn __prev">
+        <svg width="44" height="16" viewBox="0 0 44 16" fill="none">
+          <use xlink:href="img/sprite.svg#detailedSwiperBtn1"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+</div>
+      </div>
+      <div class="right">
+        <div class="right__line-top">
+          <div class="box-card-detailed__name-wrapper">
+            <h3 class="box-card-detailed__title">
+              Диван PERUGIA Grey 227
+            </h3>
+            <div class="box-card-detailed__desc">
+              <span class="point">
+                <span>Арт.:</span>
+                <span>CO-CH-7545A-B-49089</span>
+              </span>
+
+              <span class="point">
+                <span>Коллекция:</span>
+                <span class="medium">CHANTIK (OJ)</span>
+              </span>
+            </div>
+          </div>
+          <div class="box-card-detailed__btn-group">
+            <a href="#">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <use xlink:href="img/sprite.svg#ovel"></use>
+              </svg>
+            </a>
+
+            <a href="#">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <use xlink:href="img/sprite.svg#like"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="right__box-size">
+          <ul class="right__list list-reset">
+            <li>
+              <span class="name">Ширина:</span><span class="size">60 см</span>
+            </li>
+            <li>
+              <span class="name">Глубина:</span><span class="size">55 см</span>
+            </li>
+            <li>
+              <span class="name">Высота:</span><span class="size">55 см</span>
+            </li>
+          </ul>
+        </div>
+        <div class="right__box-color">
+          <fieldset class="radio-group">
+            <legend class="radio-group__title">Цвет:</legend>
+            <ul class="radio-group__list list-reset">
+              <li>
+                <label class="radio-group__label">
+                  <input type="radio" name="color" value="color1" checked>
+                  <span class="radio-castom">
+                    <picture><source srcset="img/box-card-detailed/color/1.webp" type="image/webp"><img src="img/box-card-detailed/color/1.jpg" alt="img"></picture>
+                  </span>
+                </label>
+              </li>
+
+              <li>
+                <label class="radio-group__label">
+                  <input type="radio" name="color" value="color2">
+                  <span class="radio-castom">
+                    <picture><source srcset="img/box-card-detailed/color/1.webp" type="image/webp"><img src="img/box-card-detailed/color/1.jpg" alt="img"></picture>
+                  </span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="right__box-desc">
+          <ul class="right__list list-reset">
+            <li>
+              <span class="name">Материал:</span><span class="desc">массив дерева, хлопок, полиэстер</span>
+            </li>
+            <li>
+              <div class="add-wrapp">
+                <span class="name">Наличие:</span><span class="desc">под заказ</span>
+              </div>
+              <div class="btn-modal">
+  <button class="btn-modal__btn btn-reset">
+    Узнать о поступлении
+  </button>
+</div>
+            </li>
+          </ul>
+        </div>
+        <div class="right__box-price">
+          <div class="price">
+            <span class="correct">305 815 ₽</span>
+            <span class="old"></span>
+          </div>
+          <div class="btn-modal">
+  <button class="btn-modal__btn btn-reset">
+    Узнать о снижении цены
+  </button>
+</div>
+        </div>
+        <div class="right__btn-group">
+          <ul class="right__btn-list list-reset">
+            <li>
+              <a href="#" class="btn-reset box-card-detailed__btn order">
+                Быстрый заказ
+              </a>
+            </li>
+            <li>
+              <a href="#" class="btn-reset box-card-detailed__btn basket">
+                В корзину
+              </a>
+            </li>
+            <li>
+              <button href="#" class="btn-reset btn-request">
+                Запросить видеоконсультацию
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="right__box-advantage">
+          <ul class="list-reset box-card-detailed__advantage-list">
+            <li>
+              <div class="box-card-detailed__card-advantage">
+                <span class="box-img">
+                  <img src="" alt="svg">
+                </span>
+                <p>Долговечный</p>
+              </div>
+            </li>
+            <li>
+              <div class="box-card-detailed__card-advantage">
+                <span class="box-img">
+                  <img src="" alt="svg">
+                </span>
+                <p>Долговечный</p>
+              </div>
+            </li>
+            <li>
+              <div class="box-card-detailed__card-advantage">
+                <span class="box-img">
+                  <img src="" alt="svg">
+                </span>
+                <p>Мягкий на ощупь</p>
+              </div>
+            </li>
+            <li>
+              <div class="box-card-detailed__card-advantage">
+                <span class="box-img">
+                  <img src="" alt="svg">
+                </span>
+                <p>Долговечный</p>
+              </div>
+            </li>
+            <li>
+              <div class="box-card-detailed__card-advantage">
+                <span class="box-img">
+                  <img src="" alt="svg">
+                </span>
+                <p>Долговечный</p>
+              </div>
+            </li>
+            <li>
+              <div class="box-card-detailed__card-advantage">
+                <span class="box-img">
+                  <img src="" alt="svg">
+                </span>
+                <p>Долговечный</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="box-info-detailed">
+  <div class="box-info-detailed__container container">
+    <div class="box-info-detailed__content">
+      <ul class="box-info-detailed__list list-reset">
+        <li>
+          <div class="info">
+            <div class="info__number">
+              <span>01</span>
+            </div>
+            <div class="info__content">
+              <button class="info__btn btn-reset">
+                <span>
+                  Описание
+                </span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <use xlink:href="img/sprite.svg#infoArr"></use>
+                </svg>
+              </button>
+              <div class="info__box-content">
+                <p>
+                  Софа EQUADOR — это отличный вариант для приятного отдыха на свежем воздухе. Ее эргономичный дизайн и
+                  удобный подголовник обеспечивают комфорт во время солнечных ванн или чтения. Софа выполнена из
+                  высококачественных натуральных материалов: обивка легко чистится, а древесина устойчива к влаге.
+                  Благодаря современному дизайну, софа будет прекрасно смотреться как на улице, так и в интерьере вашего
+                  дома.
+                </p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="info">
+            <div class="info__number">
+              <span>02</span>
+            </div>
+            <div class="info__content">
+              <button class="info__btn btn-reset">
+                <span>
+                  Описание
+                </span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <use xlink:href="img/sprite.svg#infoArr"></use>
+                </svg>
+              </button>
+              <div class="info__box-content">
+                <p>
+                  Софа EQUADOR — это отличный вариант для приятного отдыха на свежем воздухе. Ее эргономичный дизайн и
+                  удобный подголовник обеспечивают комфорт во время солнечных ванн или чтения. Софа выполнена из
+                  высококачественных натуральных материалов: обивка легко чистится, а древесина устойчива к влаге.
+                  Благодаря современному дизайну, софа будет прекрасно смотреться как на улице, так и в интерьере вашего
+                  дома.
+                </p>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+    <section class="box-list section-margin">
+  <div class="box-list__container container">
+    <div class="box-list__content">
+      <h2 class="box-list__title section-title">
+        Вы ранее смотрели
+      </h2>
+      <ul class="box-list__list list-reset">
+        <li>
+          <div class="card-product">
+  <a href="#" class="card-product__link">
+    <span class="card-product__box-img">
+      <picture><source srcset="img/card-product/1.webp" type="image/webp"><img src="img/card-product/1.jpg" alt="img"></picture>
+    </span>
+    <h3 class="card-product__title">
+      Диван тройной
+    </h3>
+    <span class="prise">
+      <span class="current">444 950 ₽</span>
+      <span class="old"></span>
+    </span>
+  </a>
+</div>
+        </li>
+        <li>
+          <div class="card-product">
+  <a href="#" class="card-product__link">
+    <span class="card-product__box-img">
+      <picture><source srcset="img/card-product/2.webp" type="image/webp"><img src="img/card-product/2.jpg" alt="img"></picture>
+    </span>
+    <h3 class="card-product__title">
+      Диван раскладной
+    </h3>
+    <span class="prise">
+      <span class="current">80 950 ₽</span>
+      <span class="old"></span>
+    </span>
+  </a>
+</div>
+        </li>
+        <li>
+          <div class="card-product">
+  <a href="#" class="card-product__link">
+    <span class="card-product__box-img">
+      <picture><source srcset="img/card-product/3.webp" type="image/webp"><img src="img/card-product/3.jpg" alt="img"></picture>
+    </span>
+    <h3 class="card-product__title">
+      Кресло Equador
+    </h3>
+    <span class="prise">
+      <span class="current">240 245 ₽</span>
+      <span class="old"></span>
+    </span>
+  </a>
+</div>
+        </li>
+        <li>
+          <div class="card-product">
+  <a href="#" class="card-product__link">
+    <span class="card-product__box-img">
+      <picture><source srcset="img/card-product/4.webp" type="image/webp"><img src="img/card-product/4.jpg" alt="img"></picture>
+    </span>
+    <h3 class="card-product__title">
+      Стол письменный
+    </h3>
+    <span class="prise">
+      <span class="current">90 000 ₽</span>
+      <span class="old"></span>
+    </span>
+  </a>
+</div>
+        </li>
+        <li>
+          <div class="card-product">
+  <a href="#" class="card-product__link">
+    <span class="card-product__box-img">
+      <picture><source srcset="img/card-product/5.webp" type="image/webp"><img src="img/card-product/5.jpg" alt="img"></picture>
+    </span>
+    <h3 class="card-product__title">
+      Стол кофейный
+    </h3>
+    <span class="prise">
+      <span class="current">42 000 ₽</span>
+      <span class="old"></span>
+    </span>
+  </a>
+</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+  </main>
+  <footer class="footer" id="footer">
+  <div class="footer__box-top">
+    <div class="footer__container container">
+      <div class="footer__box-top-content">
+        <div class="left">
+          <div class="box-logo">
+            <a href="#">
+              <svg width="146" height="51" viewBox="0 0 146 51" fill="none">
+                <use xlink:href="img/sprite.svg#logo"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="middle box-info">
+          <h3 class="footer__title">
+            Информация
+          </h3>
+          <nav class="footer__nav">
+            <ul class="footer__list list-reset">
+              <li>
+                <a href="#" class="footer__link">
+                  FAQ
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">
+                  Статьи
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">
+                  Виртуальная примерка мебели
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">
+                  Фотографам и видеооператорам
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">
+                  Наши галереи
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">
+                  Договор оферты
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer__link">
+                  Согласие на обработку персональных данных
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="right box-info">
+          <div class="footer__group-links">
+            <h3 class="footer__title">
+              Контакты
+            </h3>
+            <ul class="footer__list list-reset">
+              <li>
+                <a href="mailto:info@teakhouse.ru" class="footer__link">info@teakhouse.ru</a>
+              </li>
+              <li>
+                <a href="tel:+74951263629" class="footer__link">
+                  +7 (495) 126-36-29
+                </a>
+                <span>
+                  ( Москва )
+                </span>
+              </li>
+              <li>
+                <a href="tel:+78124246139" class="footer__link">
+                  +7 (812) 424-61-39
+                </a>
+                <span>
+                  ( Санкт-Петербург )
+                </span>
+              </li>
+              <li>
+                <a href="tel:+79122064545" class="footer__link">
+                  +7 (912) 206-45-45
+                </a>
+                <span>
+                  ( Архангельск )
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__box-network">
+            <h3 class="footer__title">
+              Соцсети
+            </h3>
+            <ul class="footer__box-network-list list-reset">
+              <li>
+                <a href="#" class="footer__link-network">
+                  <svg width="31" height="31" viewBox="0 0 31 31" fill="none">
+                    <use xlink:href="img/sprite.svg#tg"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer__link-network">
+                  <svg width="31" height="31" viewBox="0 0 31 31" fill="none">
+                    <use xlink:href="img/sprite.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer__link-network">
+                  <svg width="31" height="31" viewBox="0 0 31 31" fill="none">
+                    <use xlink:href="img/sprite.svg#r"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__line-bottom">
+    <div class="footer__container container">
+      <div class="footer__line-bottom-content">
+        <p class="footer__desc">
+          © Teak House, 20XX. Все права защищены.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+</body>
+</html>

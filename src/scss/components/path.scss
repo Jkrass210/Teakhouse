@@ -1,9 +1,10 @@
 .path {
-  margin-bottom: 16px;
+  padding-top: 40px;
+  margin-bottom: 29px;
   &__list {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
     white-space: nowrap;
     overflow-y: auto;
     scrollbar-width: none;
@@ -14,9 +15,7 @@
     li {
       display: flex;
       align-items: center;
-      &:nth-child(2){
-        pointer-events: none;
-      }
+      gap: 6px;
       &:last-child {
         a {
           pointer-events: none;
@@ -25,29 +24,23 @@
       a {
         display: flex;
         align-items: center;
-        gap: 8px;
+        gap: 6px;
         color: var(--text-neutral-button-default);
         transition: color 0.4s ease-in-out;
-        svg {
-          transition: color 0.4s ease-in-out;
-        }
-        &.active {
-          svg {
-            color: var(--text-neutral-button-default);
-          }
-          color: var(--text-neutral-darker);
-        }
         &:focus,&:focus-visible {
           outline: none;
         }
         &:focus-visible,&:hover,&:active {
-          color: var(--text-accent-default);
+          .text {
+            color: var(--color-black);
+          }
         }
         span {
           font-family: var(--font-family);
-          font-weight: 500;
-          font-size: 14px;
-          line-height: 143%;
+          font-weight: 400;
+          font-size: 16px;
+          text-transform: uppercase;
+          color: var(--color-7);
           transition: color 0.4s ease-in-out;
         }
       }
